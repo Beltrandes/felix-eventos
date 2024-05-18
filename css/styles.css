@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Parisienne&display=swap");
+
+:root {
+  --carmine: rgb(105, 0, 14);
+  --light-carmine: rgb(201, 33, 55);
+  --alice-blue: #f4faffff;
+  --platinum: #dee7e7ff;
+  --thistle: #b7adcfff;
+  --paynes-gray: rgb(136, 151, 160);
+  --pizza-yellow: #eee802;
+  --crepe-yellow: rgb(211, 160, 66);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier Prime", monospace;
+}
+body {
+  height: 100vh;
+}
+
+.parisienne {
+    font-family: 'Parisienne', cursive;
+}
+
+.dashed-border {
+    border: 3px dashed rgb(196, 196, 196);
+}
+
+.img-wrapper {
+    width: 30%;
+
+}
+
+.rotate {
+    transform: rotate(-5deg);
+}
+
+.rotate-reverse {
+    transform: rotate(5deg);
+}
+
+.navbar {
+  background-color: var(--carmine);
+  .navbar-brand {
+    font-family: "Parisienne", cursive;
+    color: var(--pizza-yellow);
+  }
+}
+
+.social-medias {
+  a {
+    width: 50px;
+    height: 50px;
+    i {
+      color: var(--carmine);
+    }
+  }
+}
+.home {
+  background-color: var(--platinum);
+  .carousel-inner {
+    height: 290px;
+  }
+  .img-fluid {
+    max-height: 65%;
+  }
+  .card-body {
+    .card-title {
+      color: var(--carmine);
+      font-family: "Parisienne", cursive;
+      position: relative;
+      &::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: var(--carmine);
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        transform: translateX(50%);
+      }
+    }
+  }
+}
