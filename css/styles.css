@@ -41,6 +41,38 @@ body {
     transform: rotate(5deg);
 }
 
+.menu {
+  background-color: var(--light-carmine)
+}
+
+.bg-carmine {
+  background-color: var(--carmine);
+}
+
+.text-carmine {
+  color: var(--carmine);
+}
+
+.text-pizza-yellow {
+  color: var(--pizza-yellow);
+}
+
+.fs-8 {
+  font-size: .8rem;
+  color: darkgray;
+}
+
+.section-title {
+  &::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    bottom: 80%;
+  }
+}
+
 .navbar {
   background-color: var(--carmine);
   .navbar-brand {
