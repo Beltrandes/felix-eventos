@@ -2,7 +2,7 @@
 
 :root {
   --carmine: rgb(105, 0, 14);
-  --light-carmine: rgb(201, 33, 55);
+  --light-carmine: rgb(243, 58, 83);
   --alice-blue: #f4faffff;
   --platinum: #dee7e7ff;
   --thistle: #b7adcfff;
@@ -28,10 +28,6 @@ body {
   border: 3px dashed rgb(196, 196, 196);
 }
 
-.img-wrapper {
-  width: 30%;
-}
-
 .rotate {
   transform: rotate(-5deg);
 }
@@ -46,6 +42,10 @@ body {
 
 .bg-carmine {
   background-color: var(--carmine);
+}
+
+.bg-light-carmine {
+  background-color: var(--light-carmine);
 }
 
 .bg-paynes-gray {
